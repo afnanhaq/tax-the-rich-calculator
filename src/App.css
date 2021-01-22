@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+.titles {
+	color: #F8F8FF;
+	font-family: 'Josefin Sans', sans-serif;
+	padding-left: 20px;
+	margin-top: 7px;
+	margin-bottom: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-title {
+	font-size: 300%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-subtitle {
+	padding-top: 0px;
+	margin-top: 0px;
+	font-size: 200%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar {
+	background-color: #EC1F27;
+	padding: 10px 0 10px 0;
+	margin: 0px;
+	width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.main-text {
+	padding-top: 30px;
+	margin: auto;
+	width: 70%;
+	text-align: center;
+	font-family: 'Hind', sans-serif;
+	font-size: 200%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#question {
+	padding-top: 10px;
+	font-size: 250%;
 }
+
+form {
+	width: 100%;
+	text-align: center;
+}
+
+.inline {
+	display: inline-block;
+	font-family: 'Hind', sans-serif;
+	font-size: 20px;
+	padding-top: 0px;
+	margin-top: 8px;
+}
+
+.form-section {
+	padding-top: 20px;
+}
+
+button.tips {
+	color: #F8F8FF;
+	background-color: #EC1F27;
+	display:inline-block;
+	margin-right: 10px;
+	padding: 0.3em 1.2em;
+	border-radius: 2em;
+	font-size: 14px;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration:none;
+	transition: all 0.3s;
+}
+button.tips:hover {
+	background-color: lightpink;
+}
+
+input.submit {
+	box-sizing: border-box;
+	text-decoration: none;
+	border: 0.1em solid #FFFFF;
+	color: #FFFFFF;
+	font-size: 36px;
+	background-color: black;
+	text-align: center;
+	margin: 0 0.3em 0.3em 0;
+	padding: 0.4em 0.8em;
+	transition: all 0.2s;
+	font-family: 'Josefin Sans', sans-serif;
+}
+input.submit:hover {
+	color: #000000;
+	background-color: #EC1F27;
+}
+
+/*
+input.submit {
+	box-sizing: border-box;
+	padding: 0.35em 1.2em;
+	text-decoration: none;
+	font-size: 36px;
+	color: #FFFFFF;
+	text-align: center;
+	transition: all 0.2s;
+}
+input.submit:hover {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+*/
+.search-bar {
+	font-size: 32px;
+	border-radius: 5px;
+	margin-top: 5px;
+	width: 300px;
+	height: 30px;
+}
+
