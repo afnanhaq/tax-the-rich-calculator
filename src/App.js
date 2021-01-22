@@ -135,8 +135,8 @@ const App = () => {
   return (
     <div>
       <MainArea incomeValue={incomeValue} handleSubmit={e => handleSubmit(e)} handleChange={e => setIncomeValue(e.target.value)} setValue={setValue} />
-      <Results oldTaxValue={oldTaxValue} newTaxValue={newTaxValue}  />
-      <Explanation />
+      {/*<Results oldTaxValue={oldTaxValue} newTaxValue={newTaxValue}  />*/}
+      { /* <Explanation /> */ }
     </div>
   );
 }
