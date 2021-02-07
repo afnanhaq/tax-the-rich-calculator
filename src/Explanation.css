@@ -1,0 +1,40 @@
+.width {
+	width: 75%;
+	margin: auto;
+}
+
+.title {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 300%;
+	text-align: center;
+}
+
+.top-title {
+	padding-top: 100px;
+}
+
+.explanation {
+	margin: auto;
+	text-align: center;
+	font-family: 'Hind', sans-serif;
+	font-size: 200%;
+}
+
+
+.footer {
+	margin: auto;
+	text-align: center;
+}
+
+#try_other_incomes {
+	text-decoration: underline;
+}
+
+#try_other_incomes:hover {
+	cursor: pointer;
+	color: red;
+}
+
+.footer {
+	padding-bottom: 5px;
+}

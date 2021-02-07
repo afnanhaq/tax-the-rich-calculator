@@ -1,0 +1,103 @@
+
+.titles {
+	color: #F8F8FF;
+	font-family: 'Josefin Sans', sans-serif;
+	padding-left: 20px;
+	margin-top: 7px;
+	margin-bottom: 5px;
+}
+
+.page-title {
+	font-size: 300%;
+}
+
+.page-subtitle {
+	padding-top: 0px;
+	margin-top: 0px;
+	font-size: 200%;
+}
+
+.navbar {
+	background-color: #EC1F27;
+	padding: 10px 0 10px 0;
+	margin: 0px;
+}
+
+.text-area {
+	width:75%;
+	margin: 0 auto;
+}
+
+.main-text {
+	padding-top: 30px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Hind', sans-serif;
+	font-size: 200%;
+}
+
+#question {
+	padding-top: 10px;
+	font-size: 250%;
+}
+
+form {
+	width: 100%;
+	text-align: center;
+}
+
+.inline {
+	display: inline-block;
+	font-family: 'Hind', sans-serif;
+	font-size: 20px;
+	padding-top: 0px;
+	margin-top: 8px;
+}
+
+.form-section {
+	padding-top: 20px;
+}
+
+button.tips {
+	color: #F8F8FF;
+	background-color: #EC1F27;
+	display:inline-block;
+	margin-right: 10px;
+	padding: 0.3em 1.2em;
+	border-radius: 2em;
+	font-size: 14px;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration:none;
+	transition: all 0.3s;
+}
+button.tips:hover {
+	background-color: lightpink;
+}
+
+input.submit {
+	box-sizing: border-box;
+	text-decoration: none;
+	border: 0.1em solid #FFFFF;
+	color: #FFFFFF;
+	font-size: 36px;
+	background-color: black;
+	text-align: center;
+	margin: 0 0.3em 0.3em 0;
+	padding: 0.4em 0.8em;
+	transition: all 0.2s;
+	font-family: 'Josefin Sans', sans-serif;
+}
+input.submit:hover {
+	color: #000000;
+	background-color: #EC1F27;
+}
+
+.search-bar {
+	font-size: 32px;
+	border-radius: 5px;
+	margin-top: 5px;
+	width: 300px;
+	height: 30px;
+}
+

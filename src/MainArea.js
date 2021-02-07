@@ -1,11 +1,13 @@
+import './MainArea.css';
+
 const MainArea = (props) => {
   return (
-    <section>
-      <header className="navbar">
+    <section className="main-area">
+      <header className="navbar" id="top">
         <h1 className="page-title titles"> Tax the Rich Calculator </h1>
-        <h4 className="page-subtitle titles"> It's Time to Invest in Our New York </h4>
+        <h1 className="page-subtitle titles"> It's Time to Invest in Our New York </h1>
       </header>
-      <main>
+      <main className="text-area">
         <h4 className="main-text"> Thousands of New Yorkers are demanding a proper progressive tax system in order to prevent cuts to our necessary social services and
         handle our deep budget deficit. But the question remains... </h4>
         <h2 className="main-text" id="question"> How will the new NYS progressive income tax affect me? </h2>

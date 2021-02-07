@@ -1,0 +1,35 @@
+.center {
+	padding-bottom: 10vh;
+	margin: auto;
+	text-align: center;
+
+}
+
+.result {
+	padding-top: 15px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Hind', sans-serif;
+	font-size: 200%;
+}
+
+#result-title {
+	padding-top: 100px;
+	margin-bottom: 10px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 300%;
+}
+
+#understand {
+	text-decoration: underline;
+}
+
+#understand:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	color: red;
+}
+
+small {
+	margin-bottom: 25px;
+}

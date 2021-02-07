@@ -1,5 +1,5 @@
+import { useState, useEffect } from 'react';
 import './App.css';
-import { useState } from 'react';
 import MainArea from './MainArea.js';
 import Results from './Results.js';
 import Explanation from './Explanation.js';
@@ -9,6 +9,8 @@ const App = () => {
   const [incomeValue, setIncomeValue] = useState('');
   const [oldTaxValue, setOldTaxValue] = useState(0);
   const [newTaxValue, setNewTaxValue] =  useState(0);
+  const [showResults, setShowResults] = useState(false);
+  const [showExplanation, setShowExplanation] = useState(false);
 
   const oldTaxBrackets = {
     0: 0.04,
@@ -119,6 +121,10 @@ const App = () => {
       alert("Please enter your income as a number with no commas.");
       return;
     }
+    if (incomeValue.length < 1) {
+      alert("Please enter an income")
+      return;
+    }
     if (incomeValue < 0) {
       alert("Please enter an income with a positive value.");
       return;
@@ -128,15 +134,26 @@ const App = () => {
     const updatedNewTaxValue = calculateNewTax(incomeValue_num);
     console.log("old: ", updatedOldTaxValue.toFixed(2))
     console.log("new: ", updatedNewTaxValue.toFixed(2))
+    setShowResults(true);
     setOldTaxValue(updatedOldTaxValue.toFixed(2));
     setNewTaxValue(updatedNewTaxValue.toFixed(2));
+    setShowResults(true);
   }
 
+  useEffect(() => {
+      if (showResults) {
+        var element = document.getElementById("result-title");
+        element.scrollIntoView({behavior: "smooth", inline: "nearest"});
+      }
+    })
+
   return (
-    <div>
-      <MainArea incomeValue={incomeValue} handleSubmit={e => handleSubmit(e)} handleChange={e => setIncomeValue(e.target.value)} setValue={setValue} />
-      {/*<Results oldTaxValue={oldTaxValue} newTaxValue={newTaxValue}  />*/}
-      { /* <Explanation /> */ }
+    <div className="body">
+      <div className="inner" id={showResults ? "height-hundred-percent" : "height-total-vh"} >
+        <MainArea incomeValue={incomeValue} handleSubmit={e => handleSubmit(e)} handleChange={e => setIncomeValue(e.target.value)} setValue={setValue} />
+        {showResults ? <Results oldTaxValue={oldTaxValue} newTaxValue={newTaxValue} showUnderstanding={() => {setShowExplanation(true)}}  /> : null}
+        {showExplanation ? <Explanation /> : null }
+      </div>
     </div>
   );
 }
